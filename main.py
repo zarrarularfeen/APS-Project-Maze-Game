@@ -128,20 +128,20 @@ player_pos = [1, 1]
 font = pygame.font.Font(None, 36)
 
 # Loading the player image for animation
-object_image = pygame.image.load("venv/assets/player.png")
+object_image = pygame.image.load("player.png")
 object_image = pygame.transform.scale(object_image, (50, 50))  # Resizing the image to 50 by 50.
 
 # Loading player image
-player_image = pygame.image.load("venv/assets/player 2.png")
+player_image = pygame.image.load("player 2.png")
 player_image = pygame.transform.scale(player_image, (CELL_SIZE, CELL_SIZE))  # Resize the image to match the cell size
 
 # Loading background image
-background_image = pygame.image.load("venv/assets/test.jpg")
+background_image = pygame.image.load("test.jpg")
 background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
 
 # Load background sound effect
 pygame.mixer.init()
-background_sound = pygame.mixer.Sound("venv/assets/background music.mp3")
+background_sound = pygame.mixer.Sound("background music.mp3")
 # Set the volume to 20%
 background_sound.set_volume(0.2)
 
